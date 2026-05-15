@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartilha Digital - Feminicídio</title>
+
+  <link rel="stylesheet" href="cartilha.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Cartilha Digital</h1>
+    <p>Feminicídio: conscientização, prevenção e apoio</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#oque">O que é</a></li>
+      <li><a href="#sinais">Sinais</a></li>
+      <li><a href="#prevencao">Prevenção</a></li>
+      <li><a href="#ajuda">Ajuda</a></li>
+    </ul>
+  </nav>
+
+  <section id="oque">
+    <div class="card">
+
+      <h2>O que é Feminicídio?</h2>
+
+      <p>
+        Feminicídio é o assassinato de mulheres motivado por violência de gênero,
+        discriminação, controle ou sentimento de posse.
+      </p>
+
+      <div class="dados">
+
+        <div class="box">
+          <h3>Violência</h3>
+          <p>Pode ser física, psicológica, moral ou patrimonial.</p>
+        </div>
+
+        <div class="box">
+          <h3>Controle</h3>
+          <p>Ciúmes excessivos e manipulação são sinais perigosos.</p>
+        </div>
+
+        <div class="box">
+          <h3>Denúncia</h3>
+          <p>Buscar ajuda pode salvar vidas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sinais">
+    <div class="card">
+
+      <h2>Sinais de Relacionamentos Abusivos</h2>
+
+      <ul>
+        <li>Controle excessivo sobre roupas e amizades.</li>
+        <li>Ciúmes extremos e ameaças constantes.</li>
+        <li>Humilhações públicas ou privadas.</li>
+        <li>Afastamento da vítima da família.</li>
+        <li>Agressões físicas ou destruição de objetos.</li>
+      </ul>
+
+      <div class="alerta">
+        <strong>Importante:</strong>
+        muitos casos começam com agressões verbais e psicológicas.
+      </div>
+
+    </div>
+  </section>
+
+  <section id="prevencao">
+    <div class="card">
+
+      <h2>Como Prevenir</h2>
+
+      <ul>
+        <li>Promover respeito e igualdade.</li>
+        <li>Denunciar qualquer tipo de violência.</li>
+        <li>Ouvir e apoiar vítimas.</li>
+        <li>Incentivar educação sobre violência de gênero.</li>
+      </ul>
+
+      <button class="botao" onclick="mostrarMensagem()">
+        Clique para uma mensagem
+      </button>
+
+      <p id="mensagem"></p>
+
+    </div>
+  </section>
+
+  <section id="ajuda">
+    <div class="card">
+
+      <h2>Onde Buscar Ajuda</h2>
+
+      <ul>
+        <li><strong>Ligue 180</strong> — Central de Atendimento à Mulher.</li>
+        <li><strong>Polícia Militar:</strong> 190</li>
+        <li><strong>Delegacias da Mulher</strong></li>
+      </ul>
+
+      <a class="botao" href="https://www.gov.br/mulheres/pt-br/ligue180" target="_blank">
+        Saiba Mais
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Cartilha Digital sobre Feminicídio • Projeto Educacional</p>
+  </footer>
+
+  <button id="topo">↑</button>
+
+  <script>
+
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerHTML =
+      "Combater o feminicídio é responsabilidade de toda a sociedade.";
+    }
+
+    const btnTopo = document.getElementById("topo");
+
+    window.onscroll = function () {
+
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+
+    };
+
+    btnTopo.onclick = function () {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    };
+
+  </script>
+
+</body>
+</html>
